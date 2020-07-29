@@ -1,0 +1,60 @@
+{
+  "name": "stimuli",
+  "description": "Composable behaviors for Stimulus controllers",
+  "version": "0.1.0",
+  "author": "Philipp Daun <daun@daun.ltd>)",
+  "license": "MIT",
+  "source": "src/index.js",
+  "main": "dist/stimuli.js",
+  "module": "dist/stimuli.es.js",
+  "esmodule": "dist/stimuli.modern.js",
+  "unpkg": "dist/stimuli.umd.js",
+  "scripts": {
+    "test": "npm run lint && npm run cover",
+    "test:only": "mocha --require esm --require jsdom-global/register test/**/*.js",
+    "test:watch": "npm test -- --watch",
+    "cover": "nyc --check-coverage npm run test:only",
+    "lint": "eslint src test",
+    "clean": "rimraf dist",
+    "bundle": "microbundle",
+    "build": "npm run clean && npm run bundle",
+    "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daun/stimuli"
+  },
+  "keywords": [
+    "javascript",
+    "stimulus",
+    "behavior",
+    "composition"
+  ],
+  "bugs": {
+    "url": "https://github.com/daun/stimuli/issues"
+  },
+  "homepage": "https://github.com/daun/stimuli",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^7.3.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "esm": "^3.2.25",
+    "jsdom": "16.2.2",
+    "jsdom-global": "3.0.2",
+    "microbundle": "^0.12.1",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "stimulus": "^1.1.1"
+  },
+  "dependencies": {
+    "on-demand-live-region": "^0.1.3"
+  }
+}
