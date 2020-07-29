@@ -1,9 +1,14 @@
 # Stimuli
 
+[![NPM version](https://img.shields.io/npm/v/stimuli?color=97aab4)](https://www.npmjs.com/package/stimuli)
+[![GitHub license](https://img.shields.io/github/license/daun/stimuli?color=97aab4)](./LICENSE)
+[![Bundle size](https://img.shields.io/bundlephobia/minzip/stimuli?color=97aab4&label=size)](https://bundlephobia.com/result?p=stimuli)
+<!-- [![GitHub (pre-)release date](https://img.shields.io/github/release-date-pre/daun/stimuli?label=updated)](https://github.com/daun/stimuli/releases) -->
+
 Composable behaviors for Stimulus controllers.
 
 Borrows from the `useBehavior` pattern introduced by
-[stimulus-use](https://github.com/stimulus-use/stimulus-use).
+[stimuli](https://github.com/stimuli/stimuli).
 
 **Work in progress**. Needs better documentation and tests.
 
