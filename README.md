@@ -8,7 +8,7 @@
 Composable behaviors for Stimulus controllers.
 
 Borrows from the `useBehavior` pattern introduced by
-[stimuli](https://github.com/stimuli/stimuli).
+[stimulus-use](https://github.com/stimulus-use/stimulus-use).
 
 **Work in progress**. Needs better documentation and tests.
 
