@@ -1,16 +1,13 @@
-# Stimuli
+# Stimuli ⚡️
 
 [![NPM version](https://img.shields.io/npm/v/stimuli?color=97aab4)](https://www.npmjs.com/package/stimuli)
 [![GitHub license](https://img.shields.io/github/license/daun/stimuli?color=97aab4)](./LICENSE)
 [![Bundle size](https://img.shields.io/bundlephobia/minzip/stimuli?color=97aab4&label=size)](https://bundlephobia.com/result?p=stimuli)
 <!-- [![GitHub (pre-)release date](https://img.shields.io/github/release-date-pre/daun/stimuli?label=updated)](https://github.com/daun/stimuli/releases) -->
 
-Composable behaviors for Stimulus controllers.
+Basic building blocks for Stimulus controllers.
 
-Borrows from the `useBehavior` pattern introduced by
-[stimulus-use](https://github.com/stimulus-use/stimulus-use).
-
-**Work in progress**. Needs better documentation and tests.
+Extend your controllers by adding and combining modular behaviors. **Work in progress**.
 
 ## Installation
 
@@ -102,7 +99,7 @@ const elements = this.instances.map(controller => controller.element)
 ### useAnnouncements
 
 Adds a live region for announcing updates to screen reader users. Great for
-partial page updates when loading pages via AJAX (Turbolinks, Barba, swup, etc).
+partial page visits and dynamically loaded content.
 
 ```js
 // Announce first heading inside newly fetched content
@@ -112,4 +109,4 @@ this.announce(heading.textContent || document.title)
 
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT) © Philipp Daun
+[MIT](https://opensource.org/licenses/MIT)

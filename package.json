@@ -1,6 +1,6 @@
 {
   "name": "stimuli",
-  "description": "Composable behaviors for Stimulus controllers",
+  "description": "Basic building blocks for Stimulus controllers",
   "version": "0.1.0",
   "author": "Philipp Daun <daun@daun.ltd>)",
   "license": "MIT",
