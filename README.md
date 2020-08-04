@@ -1,4 +1,4 @@
-# Stimulants 🍹
+# Stimulants 🍸
 
 [![NPM version](https://img.shields.io/npm/v/stimulants?color=97aab4)](https://www.npmjs.com/package/stimulants)
 [![GitHub license](https://img.shields.io/github/license/daun/stimulants?color=97aab4)](./LICENSE)
