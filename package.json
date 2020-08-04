@@ -1,14 +1,14 @@
 {
-  "name": "stimuli",
+  "name": "stimulants",
   "description": "Basic building blocks for Stimulus controllers",
   "version": "0.1.0",
   "author": "Philipp Daun <daun@daun.ltd>)",
   "license": "MIT",
   "source": "src/index.js",
-  "main": "dist/stimuli.js",
-  "module": "dist/stimuli.es.js",
-  "esmodule": "dist/stimuli.modern.js",
-  "unpkg": "dist/stimuli.umd.js",
+  "main": "dist/stimulants.js",
+  "module": "dist/stimulants.es.js",
+  "esmodule": "dist/stimulants.modern.js",
+  "unpkg": "dist/stimulants.umd.js",
   "scripts": {
     "test": "npm run lint && npm run cover",
     "test:only": "mocha --require esm --require jsdom-global/register test/**/*.js",
@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/daun/stimuli"
+    "url": "https://github.com/daun/stimulants"
   },
   "keywords": [
     "javascript",
@@ -35,9 +35,9 @@
     "composition"
   ],
   "bugs": {
-    "url": "https://github.com/daun/stimuli/issues"
+    "url": "https://github.com/daun/stimulants/issues"
   },
-  "homepage": "https://github.com/daun/stimuli",
+  "homepage": "https://github.com/daun/stimulants",
   "devDependencies": {
     "chai": "^4.1.2",
     "eslint": "^7.3.0",

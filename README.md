@@ -1,9 +1,9 @@
-# Stimuli ⚡️
+# Stimulants 🍹
 
-[![NPM version](https://img.shields.io/npm/v/stimuli?color=97aab4)](https://www.npmjs.com/package/stimuli)
-[![GitHub license](https://img.shields.io/github/license/daun/stimuli?color=97aab4)](./LICENSE)
-[![Bundle size](https://img.shields.io/bundlephobia/minzip/stimuli?color=97aab4&label=size)](https://bundlephobia.com/result?p=stimuli)
-<!-- [![GitHub (pre-)release date](https://img.shields.io/github/release-date-pre/daun/stimuli?label=updated)](https://github.com/daun/stimuli/releases) -->
+[![NPM version](https://img.shields.io/npm/v/stimulants?color=97aab4)](https://www.npmjs.com/package/stimulants)
+[![GitHub license](https://img.shields.io/github/license/daun/stimulants?color=97aab4)](./LICENSE)
+[![Bundle size](https://img.shields.io/bundlephobia/minzip/stimulants?color=97aab4&label=size)](https://bundlephobia.com/result?p=stimulants)
+<!-- [![GitHub (pre-)release date](https://img.shields.io/github/release-date-pre/daun/stimulants?label=updated)](https://github.com/daun/stimulants/releases) -->
 
 Basic building blocks for Stimulus controllers.
 
@@ -12,7 +12,7 @@ Extend your controllers by adding and combining modular behaviors. **Work in pro
 ## Installation
 
 ```bash
-npm install stimuli
+npm install stimulants
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ Add the desired behaviors by applying the use functions on your controllers.
 
 ```js
 import { Controller } from 'stimulus'
-import { useDebug, useEvents } from 'stimuli'
+import { useDebug, useEvents } from 'stimulants'
 
 export default class extends Controller {
   constructor(...args) {
