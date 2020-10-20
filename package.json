@@ -1,7 +1,7 @@
 {
   "name": "stimulants",
   "description": "Basic building blocks for Stimulus controllers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Philipp Daun <daun@daun.ltd>)",
   "license": "MIT",
   "source": "src/index.js",
