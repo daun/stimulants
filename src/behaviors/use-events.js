@@ -19,6 +19,7 @@ export default (controller) => {
      */
     emit(type, data = {}) {
       type = `${this.identifier}:${type}`
+      Object.assign(data, { controller: this })
       const event = new CustomEvent(type, { detail: data, bubbles: true })
       return this.element.dispatchEvent(event)
     },
