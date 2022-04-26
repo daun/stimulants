@@ -17,7 +17,7 @@ export default (controller) => {
 
   Object.defineProperty(controller, 'instances', {
     get() {
-      return [...instances[controller.identifier]]
+      return Array.from(instances[controller.identifier])
     }
   })
 
