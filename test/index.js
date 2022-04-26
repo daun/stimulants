@@ -5,12 +5,23 @@ import { useAnnouncements, useDebug, useEvents, useInstances } from '../src'
 
 const useFunctions = [useAnnouncements, useDebug, useEvents, useInstances]
 
-jsdom()
+jsdom(`<!DOCTYPE html><div></div>`)
 
 const baseController = {
+  element: document.querySelector('div'),
   identifier: 'base',
+  initialize() {},
   connect() {},
   disconnect() {}
+}
+
+function createController(use) {
+  const controller = { ...baseController }
+  use(controller)
+  controller.initialize()
+  controller.connect()
+  controller.disconnect()
+  return controller
 }
 
 describe('Library', function () {
@@ -21,39 +32,44 @@ describe('Library', function () {
 })
 
 describe('useAnnouncements', function () {
-  useAnnouncements(baseController)
+  const controller = createController(useAnnouncements)
 
   it('adds an announce method', () => {
-    assert(typeof baseController.announce === 'function')
+    assert(typeof controller.announce === 'function')
   })
+
+  controller.announce('Message')
 })
 
 describe('useDebug', function () {
-  useDebug(baseController)
+  const controller = createController(useDebug)
 
   it('adds a debug method', () => {
-    assert(typeof baseController.debug === 'function')
+    assert(typeof controller.debug === 'function')
   })
 })
 
 describe('useEvents', function () {
-  useEvents(baseController)
+  const controller = createController(useEvents)
 
   it('adds an emit method', () => {
-    assert(typeof baseController.emit === 'function')
+    assert(typeof controller.emit === 'function')
   })
   it('adds an on method', () => {
-    assert(typeof baseController.on === 'function')
+    assert(typeof controller.on === 'function')
   })
   it('adds a once method', () => {
-    assert(typeof baseController.once === 'function')
+    assert(typeof controller.once === 'function')
   })
+  controller.once('some-event', () => {})
+  controller.on('some-event', () => {})
+  controller.emit('some-event')
 })
 
 describe('useInstances', function () {
-  useInstances(baseController)
+  const controller = createController(useInstances)
 
   it('adds an instances property method', () => {
-    assert(Array.isArray(baseController.instances))
+    assert(Array.isArray(controller.instances))
   })
 })

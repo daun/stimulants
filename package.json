@@ -45,7 +45,7 @@
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-prettier": "^3.1.4",
     "esm": "^3.2.25",
-    "jsdom": "16.2.2",
+    "jsdom": "16.4.0",
     "jsdom-global": "3.0.2",
     "microbundle": "^0.12.1",
     "mocha": "^8.0.1",
